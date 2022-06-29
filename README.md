@@ -1,2 +1,2 @@
-# LLAMA-store
-LLAMA resin store gallery
+# LLAMA-store-
+LLAMA resin store website

@@ -1,0 +1,243 @@
+.bkgr {
+  z-index: -100;
+}
+* {
+  color: #f6dcff;
+}
+/* Setting Box style */
+.setting-box{
+  top: 80px;
+  background-color:rgba(73, 73, 73, 0.877);
+  left:-200px;
+  transition: 1.5s ease;
+  z-index: 2000;
+}
+.setting-box-active {
+  color: white;
+  background-color: rgba(73, 73, 73, 0.5);
+  left: 0px;
+  transition: 1s ease;
+}
+
+.setting-box .icon {
+  background-color:rgba(73, 73, 73, 0.5) ;
+  right: -34px;
+  top: 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+.setting-box .icon i {
+  font-size:25px;
+}
+                 /* ############## */
+/* Chnage color settings */
+
+.setting-box .colors-list{
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.setting-box .colors-list li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:rgb(94, 94, 94);
+  cursor: pointer;
+}
+.setting-box .colors-list li.active{
+  opacity: 0.5;
+}
+
+/* Main nav bar */
+header nav {
+  font-size:120%;
+}
+.logo{
+  width:30px;
+  height:55px;
+}
+
+/* Main Font  */
+
+.mainFont {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Secoundry Font */
+
+.secFont {
+  font-family: 'Courgette', cursive;
+}
+
+/* Main Card */
+#mainCard {
+  background-color:#000000be ;
+}
+
+/* Secound nav */
+.secNav{
+  height: 40vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+.secNav a {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  font-size: 90%;
+}
+.nav-link:hover {
+  color: black !important;
+  background: rgba(255, 255, 255, 0.6);
+}
+.secNav a:hover{
+  color: black;
+  background: rgba(255, 255, 255, 0.6);
+}
+.icon2 {
+  right:0px;
+  top:11%;
+  z-index:1000;
+}
+
+
+/* About us and introduction */
+
+#aboutUs .first {
+  background:no-repeat center;
+  background-size:cover;
+  background-image: url("../images/Whatsresin.jpg");
+}
+.split {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Gallery */
+#Gallery a:hover{
+  color: black !important;
+  background: rgba(255, 255, 255, 0.6);
+}
+#Gallery {
+  background-color:rgba(0, 0, 0, 0.753);
+}
+.products {
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Carousel */
+.carousel-caption{
+  z-index: 100;
+}
+#demo img ,#demo1 img ,#demo2 img ,#demo3 img ,#demo4 img ,#demo5 img ,#demo6 img ,
+#demo7 img ,#demo8 img ,#demo9 img ,#demo10 img ,#demo11 img ,#demo12 img {
+  height:40vh !important;
+}
+
+/* Contact Us */
+#contactUs {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+#contactUs a {
+  color: #f6dcff;
+  margin: 3px;
+  text-decoration:none;
+}
+#contactUs a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query */
+@media screen and (min-width:768px) {
+  .split {
+    width:49%;
+  }
+  #mainCard p{
+    width:50%;
+    font-size:x-large;
+  }
+  .secNav a {
+    font-size: 125%;
+  }
+  #aboutUs .first {
+    height: 70vh;
+  }
+  #aboutUs p {
+    font-size: 20px !important;
+  }
+  #demo img ,#demo1 img ,#demo2 img ,#demo3 img ,#demo4 img ,#demo5 img ,#demo6 img ,
+  #demo7 img ,#demo8 img ,#demo9 img ,#demo10 img ,#demo11 img ,#demo12 img {
+    height:60vh !important;
+  }
+  .products , .carousel {
+    width:50%;
+  }
+  .package img {
+    width: 200px !important;
+    height: max-content !important;
+    max-height: 250px !important;
+  }
+}
+
+
+/* ####################################################################################### */
+
+.package img {
+  width: 100px;
+  height: fit-content;
+  max-height: 80px;
+  cursor: pointer;
+}
+.package img:hover {
+  opacity: 60%;
+}
+
+
+/* Popup element style */
+
+.popup-element {
+  position: fixed;
+  left:0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
