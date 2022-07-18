@@ -1,24 +1,38 @@
 // Setting box
-document.querySelector(".setting-box").onclick = () => document.querySelector(".setting-box").classList.toggle("setting-box-active");
-
-let clNo = document.querySelector(".setting-box .info .no")
-let clYes = document.querySelector(".setting-box .info .yes")
-
-clYes.addEventListener("click", () => {
-    clNo.classList.remove("activeBtn")
-    clYes.classList.add("activeBtn")
-    setInterval(bkground, 3000)
-})
-
-clNo.addEventListener("click", () => {
-    clYes.classList.remove("activeBtn")
-    clNo.classList.add("activeBtn")
-    clearInterval(backgroundCounter)
-    page.style.backgroundImage = `url(${imgsArray[randomNumber]})`
-})
+document.querySelector(".icon").onclick = () =>
+document.querySelector(".setting-box-content").classList.toggle("setting-box-content-active");
+// Background change
+let imgChange = document.querySelectorAll(".info ul img");
+let mainImg = document.querySelector(".bkgr");
+imgChange.forEach(e => {
+    e.onclick = () => {
+        mainImg.src = e.src;
+        localStorage.setItem("background" , e.src);
+    }
+});
+//Save background change to local storage
+if (localStorage.getItem("background") !== null) {
+    mainImg.src = localStorage.background
+}
 
 
+//Scroll to top button
+let scrollTop = document.getElementById("iconUp");
 
+window.onscroll = () => {
+    if (window.scrollY >=500) {
+        scrollTop.style.display = "block";
+    }
+    else {
+        scrollTop.style.display = "none";
+    }
+}
+scrollTop.onclick = () => {
+    window.scrollTo ({
+        top:0,
+        behavior:"smooth"
+    })
+}
 
 
 

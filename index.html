@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <img class="position-fixed img-fluid bkgr vh-100 w-100" src="images/MainBackground.jpg">
+    <img class="position-fixed img-fluid bkgr vh-100 w-100" src="images/Background/MainBackground1.jpg">
     <header class="sticky-top">
 
         <nav class="slide-down navbar navbar-expand-md bg-opacity-50 bg-light navbar-light bg-dark">
@@ -49,13 +49,12 @@
             </div>
           </nav>
     </header>
-
     <!-- start settings box -->
-    <div class="setting-box p-3 position-fixed">
-        <div class="icon position-absolute text-center p-1 text-white"><i class="fa-solid fa-gear fa-spin"></i></div>
-        <div>
-            <div class="info text-center py-1">
-                <h6>Colors</h6>
+    <div class="setting-box position-fixed rounded-3">
+        <button class="icon position-absolute text-center fs-3 rounded-circle border-light border-1 text-white"><i class="fa-solid fa-gear fa-spin"></i></button>
+        <div class="setting-box-content p-2">
+            <div id="changeColors" class="info text-center">
+                <h5>Color</h5>
             <ul class="colors-list">
                 <li class="active"></li> 
                 <li></li>
@@ -63,15 +62,20 @@
                 <li></li>
                 <li></li>
             </ul>
-            </div><br>
-            <div class="info d-inline-block text-center p-2">
-                <h6>Random Background</h6>
-                <span class="yes activeBtn">Yes</span>
-                <span class="no">No</span>
+            </div>
+            <div class="info d-inline-block text-center">
+                <h5>Background</h5>
+                <ul class="list-unstyled d-flex justify-content-evenly">
+                    <li><img class="p-1" src="images/Background/MainBackground1.jpg"></li>
+                    <li><img class="p-1" src="images/Background/MainBackground2.jpg"></li>
+                    <li><img class="p-1" src="images/Background/MainBackground3.jpg"></li>
+                </ul>
             </div>
         </div>
     </div>
     <!-- end setting box -->
+
+    <button id="iconUp" class="position-fixed text-center border-0 bg-transparent"><i class="text-danger fa-arrow-alt-circle-up fa-solid"></i></button>
 
     <section> 
         <!--Main Card-->
@@ -108,7 +112,7 @@
                 <div class="text-center d-flex flex-wrap justify-content-center">
                     <div class="p-2 split m-1">
                         <h1 class="mainFont p-3">
-                            About us     
+                            About us    <i class=" fa-solid"></i>
                         </h1>
                         <p class="secFont">  <!--Home Descreption-->
                             Hello everyone.<br>
@@ -123,11 +127,10 @@
                             What is resin     
                         </h1>
                         <p class="secFont">
-                            Resin Epoxy is a chemical liquid can be decorated and colored as required,
+                            Resin Epoxy is a chemical component can be decorated and colored as required,
                             then poured into desired molds that shape the item , takes up to 10 days for the
                             initial hardener and up to 30 days for full hardned, depends on the weather.<br>
-                            It has a shiny and very clear look like glass, but the final touch will feel
-                            like plastic.<br>
+                            It has a shiny and very clear look like glass, very durable.<br>
                             can be affected by fire and heat.
                         </p>
                     </div>
@@ -165,7 +168,7 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active d-flex justify-content-center">
-                            <img src="images/BridePackage/1.jpg" alt="P1" class="w-100">
+                            <img src="images/BridePackage/1.jpg" alt="P1" class="w-100">    
                         </div>
                 
                         <div class="carousel-item d-flex justify-content-center">
@@ -227,7 +230,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Baby Tableaus</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        The perfect gift for any mother, A Tableau with her baby's birthday details.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/BabyTableaus.html" target="_blank">Show More</a>
@@ -241,7 +244,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Engadgment Tray</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        Special trays for your special day ,pick yours now from our trending marvellous trays.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/EngadgmentTrays.html" target="_blank">Show More</a>
@@ -321,7 +324,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Gifts Tableaus</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        Tired of thinking what to get in any occasion, LLAMA is here for you.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/GiftsTableaus.html" target="_blank">Show More</a>
@@ -335,7 +338,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Coasters</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        Serve your tea and coffe with LLAMA elegance collection of coasters.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/Coasters.html" target="_blank">Show More</a>
@@ -415,7 +418,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Keychains</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        We don't forget your keys , make sure you don't too.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/Keychains.html" target="_blank">Show More</a>
@@ -428,7 +431,7 @@
                 <div class="products">
                     <h3 class="text-center p-3 mainFont">Clocks</h3>
                     <p class="container text-center secFont">
-                        Be unique with our elegante bride packages with a vary in colors and styles.
+                        Change the shape of your wall with a LLAMA design clock.
                     </p>
                     <div class="mb-2 text-center">
                         <a class="p-2 rounded-pill opacity-75 text-white fs-4 secFont" href="Pages/Clocks.html" target="_blank">Show More</a>

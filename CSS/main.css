@@ -1,3 +1,4 @@
+
 .bkgr {
   z-index: -100;
 }
@@ -6,33 +7,53 @@
 }
 /* Setting Box style */
 .setting-box{
-  top: 80px;
+  left: 20px;
+  bottom: 70px;
   background-color:rgba(73, 73, 73, 0.877);
-  left:-200px;
-  transition: 1.5s ease;
   z-index: 2000;
 }
-.setting-box-active {
-  color: white;
-  background-color: rgba(73, 73, 73, 0.5);
-  left: 0px;
-  transition: 1s ease;
+.setting-box-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left:10%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(73, 73, 73, 0.877) transparent transparent transparent;
 }
 
+.setting-box-content-active{
+  display: block !important;
+}
+.setting-box-content {
+  display: none;
+}
+#changeColors {
+  display: none;
+}
 .setting-box .icon {
   background-color:rgba(73, 73, 73, 0.5) ;
-  right: -34px;
-  top: 30px;
+  bottom:-60px;
   width: fit-content;
   cursor: pointer;
 }
-.setting-box .icon i {
-  font-size:25px;
+#iconUp {
+  right:10px;
+  bottom: 10px;
+  font-size: 40px;
+  display: none;
+  z-index: 2000;
+}
+
+.info ul img {
+  width: 60px;
+  cursor: pointer;
 }
                  /* ############## */
 /* Chnage color settings */
 
-.setting-box .colors-list{
+/* .setting-box .colors-list{
   padding: 0;
   list-style: none;
   text-align: center;
@@ -47,7 +68,7 @@
 }
 .setting-box .colors-list li.active{
   opacity: 0.5;
-}
+} */
 
 /* Main nav bar */
 header nav {
@@ -185,28 +206,39 @@ header nav {
 
 
 /* ####################################################################################### */
-
+/* Secoundery pages images */
 .package img {
   width: 100px;
   height: fit-content;
-  max-height: 80px;
+  max-height: 70px;
   cursor: pointer;
 }
-.package img:hover {
-  opacity: 60%;
-}
-
 
 /* Popup element style */
-
 .popup-element {
   position: fixed;
-  left:0;
-  top: 0;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   z-index: 1000;
+}
+.popup-element button i {
+  border: 1;
+  color: #f6dcff;
+  position: fixed;
+  right: 10%;
+  top: 20%;
+}
+.popup-element img {
+  max-width: 80%;
+  max-height: 80%;
+  position: fixed;
+  left:50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
 }
 
 
